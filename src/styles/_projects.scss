@@ -1,0 +1,54 @@
+@use'variaveis';
+
+.projetos {
+  align-items: center;
+  text-align: center;
+  
+    &__list {
+      list-style: none;
+      padding: 0;
+  
+      &-item {
+        a {
+          text-decoration: none;
+          background-color: variaveis.$cor-fundo-botoes;
+          display: block;
+          padding: 16px 20px;
+          margin-bottom: 16px;
+          margin-top: 32px;
+          text-align: center;
+          color: variaveis.$cor-texto;
+          font-weight: bold;
+          border-radius: 30px;
+          border: 2px solid variaveis.$cor-fundo-botoes;
+          transition: all ease 0.5s;
+  
+          &:hover {
+            color: variaveis.$cor-hover;
+            background-color: transparent;
+          }
+          .projetos__tooltip {
+            display: none;
+            position: absolute;
+            width: auto;
+            background-color: variaveis.$cor-tooltip;
+            color: variaveis.$cor-texto;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: left;
+          }
+  
+          &:hover .projetos__tooltip {
+            display: block;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  
