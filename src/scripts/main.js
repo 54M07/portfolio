@@ -18,3 +18,17 @@
     });
   }
 
+  function toggleMenu() {
+    var x = document.querySelector(".nav-menu__list");
+    if (x.style.display === "none") {
+      x.style.display = "flex";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    document.getElementById('skillsTitle').innerText = 'Technologias que uso, toque para mais informações';
+  }
+  

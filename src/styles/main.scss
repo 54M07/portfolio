@@ -9,7 +9,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-}body {
+}
+
+body {
   background-color: variaveis.$cor-de-fundo;
   color: variaveis.$cor-texto;
 }
@@ -43,7 +45,7 @@ li {
     display: none;
 
     @media (max-width: 768px) {
-      display: block; 
+      display: block;
       color: variaveis.$cor-icone-menu;
       font-size: 24px;
       cursor: pointer;
@@ -94,6 +96,35 @@ li {
 
       &:hover {
         transform: scale(1.3);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: block;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid;
+    color: variaveis.$cor-hover;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+    text-align: center;
+
+    &__list {
+
+      li {
+        margin: 8px 0;
+        padding: 8px;
       }
     }
   }

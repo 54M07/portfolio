@@ -60,3 +60,33 @@
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 768px) {
+  .skills {
+    &__title {
+      font-size: 1em;
+      content: "Toque para mais informações";
+    }
+
+    &__list {
+      display: block;
+      text-align: center;
+      margin: 8px;
+      padding: 8px;
+
+      &-item {
+        margin: 8px;
+        position: relative;
+        width: 100%;
+
+        .skills__tooltip {
+          .skills__tooltiptext {
+            bottom: -5px;
+            top: auto;
+            visibility: visible; /* Altera a visibilidade para tornar o tooltip sempre visível */
+          }
+        }
+      }
+    }
+  }
+}

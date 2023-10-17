@@ -35,3 +35,38 @@
       text-align: left;
     }
   }
+
+  @media (max-width: 768px) {
+    .sobre {
+      display: block;
+      margin-top: 68px;
+    }
+    
+    .profile {
+  
+      &__info {
+        display: block;
+        text-align: center;
+      }
+  
+      &__avatar {
+        display: block;
+        text-align: center;
+        margin: auto;
+        width: 50%;
+      }
+  
+      &__bio {
+        h1, h2, p {
+          font-size: 18px;
+          text-align: center;
+          margin-top: 16px;
+          padding: 4px;
+        }
+
+        h2 {
+          margin: 68px;
+        }
+      }
+    }
+  }

@@ -50,3 +50,23 @@
     100% { transform: translateX(0); opacity: 1; }
 }
   
+@media (max-width: 768px) {
+  .rotate {
+    animation-name: rotate;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
