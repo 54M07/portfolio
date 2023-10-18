@@ -126,13 +126,6 @@ li {
   .nav-menu {
     display: block;
     text-align: center;
-
-    &__list {
-
-      li {
-        margin: 8px 0;
-        padding: 8px;
-      }
-    }
+    margin-left: 8px;
   }
 }
