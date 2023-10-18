@@ -26,8 +26,7 @@
       x.style.display = "none";
     }
   }
-
-
+ 
   if (window.matchMedia("(max-width: 768px)").matches) {
     document.getElementById('skillsTitle').innerText = 'Technologias que uso, toque para mais informações';
   }

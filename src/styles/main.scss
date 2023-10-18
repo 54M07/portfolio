@@ -74,6 +74,9 @@ li {
   }
 }
 
+.mobile-menu {
+  display: none;
+}
 
 .social-links {
   display: flex;
@@ -112,6 +115,10 @@ li {
     color: variaveis.$cor-hover;
   }
 
+  .mobile-menu {
+    display: block;
+  }
+  
   .menu-icon {
     display: none;
   }
